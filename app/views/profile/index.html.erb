@@ -1,0 +1,6 @@
+<% content_for :profile_subview do %>
+<div class="col-sm-12">
+<h2><%= t('.welcome')+" "+current_user.first_name+"!" %></h2>
+</div>
+<% end %>
+<%= render :template => 'layouts/profile' %>

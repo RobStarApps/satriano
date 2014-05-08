@@ -1,0 +1,11 @@
+<% if error_messages.size == 1 %>
+  <% error_messages.each do |msg| %>
+    <span class="has-error"><%= msg %></span>
+  <% end %>
+<% else %>
+  <ul class="has-error unstyled arrow">
+    <% error_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+  </ul>
+<% end %>

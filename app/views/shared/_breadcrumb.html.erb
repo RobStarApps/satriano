@@ -1,0 +1,14 @@
+<ul class="breadcrumb pull-left">
+  <li><%= link_to_unless_current t(".home"), root_path %></li>
+  <%
+    last_breadcrumb_item = @breadcrumbs.pop;
+  %>
+  <% @breadcrumbs.each do |bci| %>
+  <li>
+    <%= link_to_unless_current t(bci.name), bci.path %>
+  </li>
+  <% end %>
+  <li class="active">
+    <%= t(last_breadcrumb_item.name) %>
+  </li>
+</ul>

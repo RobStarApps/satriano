@@ -1,0 +1,36 @@
+<% content_for :content do %>
+<div class="row">
+	<div class="col-sm-4">
+		<ul class="nav nav-pills nav-stacked">
+			<li
+			<% if(current_page?(profile_path)) %> 
+			class="active"
+			<% end %> 
+			><%= link_to t('.overview'), profile_path %></li>
+			<li 
+			<% if(current_page?(messages_path)) %> 
+			class="active"
+			<% end %> 
+			><%= link_to t('.messages'), messages_path %></li>
+			<li
+			<% if(current_page?(calendar_path)) %> 
+			class="active"
+			<% end %> 
+			><%= link_to t('.calendar'), calendar_path  %></li>
+
+			<li 
+			<% if(current_page?(user_addresses_path)) %> 
+			class="active"
+			<% end %> >
+			<%= link_to t('.account'), user_addresses_path %>
+		</li>
+	</ul>
+
+
+</div>
+<div class="col-sm-8">
+	<%= yield(:profile_subview) %>
+</div>
+</row>
+<% end %>
+<%= render :template => 'layouts/application' %>

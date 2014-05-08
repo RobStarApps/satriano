@@ -1,5 +1,8 @@
+
+
 en:
   shared:
     header:
-      site_name:'Satriano'
-      sign_in:'Sign in'
+      site_name: "Simon's Top Secret Facebook Killer"
+      site_title: "Simon's Top Secret Facebook Killer"
+      sign_in: 'Sign in'

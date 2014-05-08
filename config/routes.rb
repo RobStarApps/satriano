@@ -1,11 +1,21 @@
 Satriani::Application.routes.draw do
+
   get "home/index"
 
-  #get "welcome/index"
 
   devise_for :users
   root :to => 'home#index'
   
+
+  resources :user_addresses
+
+  resources :messages
+
+ 
+  get 'calendar', to: 'calendar#index'
+  get 'profile', to: 'profile#index'
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

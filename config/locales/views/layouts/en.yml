@@ -1,0 +1,8 @@
+en:
+ layouts:
+  profile:
+   welcome: "Willkommen"
+   overview: "Übersicht"
+   messages: "Nachrichten"
+   account: "Meine Daten"
+   calendar: "Kalender"

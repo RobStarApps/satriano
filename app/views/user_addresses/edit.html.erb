@@ -1,0 +1,12 @@
+
+
+
+<% content_for :profile_subview do %>
+<div class="col-sm-12">
+<%= render :partial=> 'shared/new_address', locals:{user_address:@user_address} %>
+</div>
+
+<%= render 'modals/address_modal' %>
+
+<% end %>
+<%= render :template => 'layouts/profile' %>

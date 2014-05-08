@@ -4,6 +4,9 @@ class ApplicationController < ActionController::Base
   before_filter :set_locale
 
 
+def profile
+end
+
  private
 
   def set_locale
@@ -12,4 +15,6 @@ class ApplicationController < ActionController::Base
       I18n.locale= I18n.default_locale
     end
   end
+
+
 end

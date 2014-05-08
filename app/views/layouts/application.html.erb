@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Satriani</title>
+  <title><%= t('shared.header.site_title') %></title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
@@ -12,15 +12,19 @@
 <body>
 
   <header>
-      <div class=" navbar navbar-default navbar-fixed-top shadowDarkBottom">
+      <div class="main-container">
         <%= render partial: 'shared/header' %>
       </div>
        </header>
 
-    <div id="main">
 
+    <div id="main" class="main-container">
+        <% if !@breadcrumbs.blank? %>
+          <%= render partial: 'shared/breadcrumb'%>
+        <% end %>
+        <%= content_for?(:content) ? yield(:content) : yield %>
 
-<%= yield %>
     </div>
+    
 </body>
 </html>

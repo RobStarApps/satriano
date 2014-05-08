@@ -1,0 +1,25 @@
+
+<% content_for :profile_subview do %>
+<div class="col-sm-12">
+
+<% 
+
+@user_addresses.each do |address| 
+%>
+
+<%= render :partial=>'shared/address', :locals => {:address=> address}
+%>
+ <%= link_to t('edit'),  edit_user_address_path(address),  class:'btn btn-warning' %>
+
+ <%= link_to '<i class="glyphicon glyphicon-trash"></i>'.html_safe,  user_address_path(address),  class:'btn btn-warning', :confirm => t('.sure_question'), :method => :delete %>
+<% end %>
+
+<br/><br/>
+ <%= link_to t('.nadd_new_address'),  new_user_address_path,  class:'btn btn-warning' %>
+
+</div>
+
+
+
+<% end %>
+<%= render :template => 'layouts/profile' %>
