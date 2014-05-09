@@ -1,3 +1,25 @@
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBlONf7UUoCBLCC8F-zCQ4Ur0YuSi2fWQo&sensor=false"></script>
 <h1><%= t("home.hello") %></h1>
-<p><%= @user.email %></p>
 
+<div id="googlemap">
+				 <div id="map-canvas" class="col-sm-6" ></div>
+</div>
+
+
+<script type="text/javascript">
+
+latitude=<%= @location.latitude %>;
+if(latitude==0){
+latitude=53.542764;
+}
+
+longitude=<%= @location.longitude %>;
+
+if(longitude==0){
+longitude=9.986259;
+}
+
+
+refreshMap(latitude, longitude);
+
+</script>

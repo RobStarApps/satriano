@@ -1,5 +1,5 @@
 de:
  user_addresses:
-  add_new_address: "Adresse hinzufügen"
   index:
+   add_new_address: "Adresse hinzufügen"
    sure_question: "Möchtest Du die Adresse wirklich löschen"

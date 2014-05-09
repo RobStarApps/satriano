@@ -1,5 +1,7 @@
 class HomeController < ApplicationController
   def index
-  	@user=User.first
+  	@location=request.location
+  	
+  	
   end
 end

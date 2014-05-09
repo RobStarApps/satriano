@@ -1,0 +1,19 @@
+<% content_for :profile_subview do %>
+<div class="col-sm-12">
+<h2><%= t('.title')%></h2>
+<p><%= t('.description')%></p>
+
+<h4><%= t('.skills')%></h4>
+
+<% 
+
+current_user.user_skills.each do |sk| %>
+
+<%=
+t(Skill.find(sk.id).slug) %>
+
+<% end %>
+
+</div>
+<% end %>
+<%= render :template => 'layouts/profile_overview' %>

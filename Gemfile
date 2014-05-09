@@ -14,10 +14,12 @@ gem 'carmen-rails'
 gem 'devise'
 gem 'devise-i18n-views'
 
-
+gem "geocoder"
 
 gem 'http_accept_language'
 
+
+gem 'jquery-rails'
 
 
 
@@ -31,6 +33,7 @@ gem 'therubyracer'
 
 gem 'will_paginate', '~> 3.0' #--rst
 
+gem 'mailboxer'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -44,20 +47,26 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
 
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+group :test, :development do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'database_cleaner'
+  gem 'ffaker'
+  gem 'capybara'
+  gem 'selenium-webdriver'
+  gem 'timecop'
+end
 
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
+group :test do
+  gem "codeclimate-test-reporter"
+end
 
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'debugger'
+group :development do
+  gem 'jazz_hands'
+  gem 'better_errors'
+  gem 'capistrano'
+  gem 'capistrano-ext'
+  gem 'rvm-capistrano'
+end
 

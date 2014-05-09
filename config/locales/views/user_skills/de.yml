@@ -1,0 +1,10 @@
+de:
+ user_skills:
+  index:
+   title: "Ihr Lehrangebot"
+   description: "Beschreiben Sie sich und Ihr Angebot an dieser Stelle"
+   skills: "Ihre Instrumente"
+   transportation: "Ortsgebundenheit"
+   price: "Preis pro Stunde"
+   education: "Ausbildung"
+   

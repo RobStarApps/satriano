@@ -9,6 +9,7 @@ Satriani::Application.routes.draw do
 
   resources :user_addresses
 
+  resources :user_skills
   resources :messages
 
  

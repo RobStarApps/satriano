@@ -24,6 +24,13 @@
 			<% end %> >
 			<%= link_to t('.account'), user_addresses_path %>
 		</li>
+
+			<li 
+			<% if(current_page?(user_skills_path)) %> 
+			class="active"
+			<% end %> >
+			<%= link_to t('.skills'), user_skills_path %>
+		</li>
 	</ul>
 
 
