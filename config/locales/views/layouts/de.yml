@@ -3,9 +3,10 @@
 
 de:
   layouts:
-    profile:
+    profile_overview:
       welcome: "Willkommen"
       overview: "Übersicht"
       messages: "Nachrichten"
-      account: "Meine Daten"
+      account: "Ihre Ausbildungsstätten"
+      skills: "Ihre Bildungsangebot"
       calendar: "Kalender"

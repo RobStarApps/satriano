@@ -7,3 +7,11 @@ de:
       site_title: 'Simons Top Secret Facebook Killer'
       sign_in: 'Anmelden'
       profile: 'Profil'
+    skills_selector: 
+     add_instrument: "Weiteres Instrument"
+     select_instrument: "Wähle Instrument"
+     add_submit: "hinzufügen"
+     add_availability: "Weitere Verfügbarkeit"
+     select_availability: "Wähle Verfügbarkeit"
+     add_transportation: "Ortsgebundenheit"
+     select_transportation: "Wähle Ortsgebundenheit"

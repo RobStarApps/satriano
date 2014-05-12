@@ -7,9 +7,24 @@ de:
  country: "Land"
  phone: "Telefonnummer"
  optional: "opional"
+ instrument: "instrument"
  guitar: "Gitarre"
  piano: "Klavier"
  drums: "Schlagzeug"
  violine: "Geige"
  bass_guitar: "Bass Gitarre"
  double_bass: "Kontrabass"
+
+
+#transportations
+ addresses_only: "Unterricht nur in meinen Ausbildungsstätten"
+ comes_around: "Unterricht auch außerhalb der Ausbildungsstätten"
+
+
+#availabilities
+ fullday: "ganztags"
+ mornings: "morgens"
+ afternoons: "nachmittags"
+ evenings: "abends"
+ nights: "nachts"
+ oncall: "nach Absprache"

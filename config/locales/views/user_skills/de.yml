@@ -3,8 +3,21 @@ de:
   index:
    title: "Ihr Lehrangebot"
    description: "Beschreiben Sie sich und Ihr Angebot an dieser Stelle"
-   skills: "Ihre Instrumente"
+   instruments: "Ihre Ausbildungsinstrumente"
+   education: "Ihre Ausbildung"
+   specials: "Spezialisierungen"
+   specials_description: "Hier können Sie angeben, ob Sie auf bestimmte Genres oder Bereichen spezialisiert sind (Bsp.: Flamenco Gitarre, Jazz, ... )."
+   availability: "Verfügbarkeit"
+   targets: "Zielgruppen"
+   about_you: "Über Sie"
+   other: "Weiteres"
    transportation: "Ortsgebundenheit"
+
    price: "Preis pro Stunde"
    education: "Ausbildung"
+   add_new_instrument: "Instrument hinzufügen"
+   sure_question_instrument: "Möchtest Du das Instrument wirklich löschen?"
+
+   languages: "Fremd-/Unterrichtssprachen"
+
    
