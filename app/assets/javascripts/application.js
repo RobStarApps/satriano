@@ -15,7 +15,7 @@
 //= require bootstrap
 
 
-function refreshMap(latitude, longitude){
+function refreshMap(canvas, latitude, longitude){
 
 google.maps.visualRefresh = true;
  var geocoder;
@@ -26,7 +26,7 @@ function initialize() {
     zoom: 10,
     center: new google.maps.LatLng(latitude, longitude)
   };
-  map = new google.maps.Map(document.getElementById('map-canvas'),
+  map = new google.maps.Map(document.getElementById(canvas),
       mapOptions);
 }
 

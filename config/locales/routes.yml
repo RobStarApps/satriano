@@ -1,0 +1,10 @@
+en:
+ routes:
+
+de:
+ routes:
+  imprint: impressum
+  terms: agb
+  contact: kontakt
+  privacy: datenschutz
+  faq: faq

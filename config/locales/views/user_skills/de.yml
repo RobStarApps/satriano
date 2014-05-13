@@ -8,16 +8,12 @@ de:
    specials: "Spezialisierungen"
    specials_description: "Hier können Sie angeben, ob Sie auf bestimmte Genres oder Bereichen spezialisiert sind (Bsp.: Flamenco Gitarre, Jazz, ... )."
    availability: "Verfügbarkeit"
-   targets: "Zielgruppen"
+   target: "Zielgruppen"
    about_you: "Über Sie"
    other: "Weiteres"
    transportation: "Ortsgebundenheit"
-
    price: "Preis pro Stunde"
    education: "Ausbildung"
-   add_new_instrument: "Instrument hinzufügen"
-   sure_question_instrument: "Möchtest Du das Instrument wirklich löschen?"
-
-   languages: "Fremd-/Unterrichtssprachen"
+   language: "Fremd-/Unterrichtssprachen"
 
    

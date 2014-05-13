@@ -8,6 +8,8 @@ gem 'activesupport', '~> 4.0.0'
 gem 'batch_translations'
 
 gem 'bootstrap-sass', '~> 3.1.1'
+gem 'breadcrumbs_on_rails'
+
 gem "cancan"
 gem 'carmen'
 gem 'carmen-rails'
@@ -30,7 +32,7 @@ gem 'simple_form'
 gem 'sqlite3'
 
 gem 'therubyracer'
-
+gem 'route_translator'
 gem 'will_paginate', '~> 3.0' #--rst
 
 gem 'mailboxer'

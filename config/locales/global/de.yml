@@ -21,10 +21,39 @@ de:
  comes_around: "Unterricht auch außerhalb der Ausbildungsstätten"
 
 
-#availabilities
+ #availabilities
  fullday: "ganztags"
  mornings: "morgens"
  afternoons: "nachmittags"
  evenings: "abends"
  nights: "nachts"
  oncall: "nach Absprache"
+
+ #targets
+ beginner: "Anfänger"
+ professionals: "Profis"
+ kids: "Kinder"
+ teenager: "Teenager"
+ grownups: "Erwachsene"
+ disabled: "Menschen mit Behinderung"
+ skilled: "Fortgeschrittene"
+ all: "Jeder"
+
+
+  #languages
+ german: "deutsch"
+ english: "englisch"
+ french: "französisch"
+ czech: "tschechisch"
+ polish: "polnisch"
+ swedish: "schwedisch"
+ russian: "russisch"
+ finish: "finnisch"
+ norwegian: "norwegisch"
+ dutch: "holländisch"
+ spanish: "spanisch"
+ italian: "italienisch"
+ bulgarian: "bulgarisch"
+ romainian: "romänisch"
+
+

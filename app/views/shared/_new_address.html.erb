@@ -39,11 +39,14 @@
       </div>
     </div>
   
-   <div class="form-group <%='has-error' unless @user_address.errors[:country].blank? %>">
+   <div class="form-group <%='has-error' unless @user_address.errors[:country_id].blank? %>">
       <%=f.label :country,  t('country'),  :class=>'col-sm-3 control-label' %>
       <div class="col-sm-9">
-           <%=f.text_field :country, :class=>'form-control' %>
-        <%= error_messages_for(user_address, :country) %>
+          
+            <% country_array = @countries.map { |country| [t(country.printable_name) , country.id] } %>
+            <%= select("user_address", "country_id", country_array, :prompt => t('.select')) %>
+
+        <%= error_messages_for(user_address, :country_id) %>
        
       </div>
     </div>

@@ -56,8 +56,9 @@ def reload_skills
 
     @instruments=Skill.where(:type_id => Type.where(:slug=>'instrument').first.id) & Skill.where.not(:id=>user_skill_ids)
     @availabilities=Skill.where(:type_id => Type.where(:slug=>'availability').first.id) & Skill.where.not(:id=>user_skill_ids)
-  @transportations=Skill.where(:type_id => Type.where(:slug=>'transportation').first.id) & Skill.where.not(:id=>user_skill_ids)
-
+    @transportations=Skill.where(:type_id => Type.where(:slug=>'transportation').first.id) & Skill.where.not(:id=>user_skill_ids)
+    @targets=Skill.where(:type_id => Type.where(:slug=>'target').first.id) & Skill.where.not(:id=>user_skill_ids)
+    @languages=Skill.where(:type_id => Type.where(:slug=>'language').first.id) & Skill.where.not(:id=>user_skill_ids)
 
  end
 

@@ -7,6 +7,7 @@ class UserAddressesController < ApplicationController
   end
 
   def edit
+    @countries=Country.all
     @user_address=UserAddress.find(params[:id])
   end
 
@@ -31,6 +32,7 @@ class UserAddressesController < ApplicationController
   end
 
   def new
+    @countries=Country.all
   	@user_address=UserAddress.new
   
   end
@@ -39,7 +41,7 @@ class UserAddressesController < ApplicationController
   end
 
   def user_address_params 
-  params.require(:user_address).permit(:street, :street_number, :postcode, :city, :country)
+  params.require(:user_address).permit(:street, :street_number, :postcode, :city, :country_id)
   end
 
   def destroy

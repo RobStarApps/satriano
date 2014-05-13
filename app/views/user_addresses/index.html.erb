@@ -5,7 +5,27 @@
 <% 
 
 @user_addresses.each do |address| 
+map_id="map_"+address.id.to_s;
+
 %>
+
+<div id="<%= map_id%>" class="map-canvas" class="col-sm-6" ></div>
+
+
+<script type="text/javascript">
+
+latitude=<%= address.latitude %>;
+
+
+longitude=<%= address.longitude %>;
+
+
+
+refreshMap("<%= map_id%>", latitude, longitude);
+
+</script>
+
+
 
 <%= render :partial=>'shared/address', :locals => {:address=> address}
 %>

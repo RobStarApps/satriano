@@ -1,3 +1,22 @@
+ <h4><%= t('.'+label) %></h4>
+<% 
+
+current_user.user_skills.each do |sk| 
+
+
+if Type.find(Skill.find(sk.skill_id).type_id).slug.eql? label  %>
+
+  <%= t(Skill.find(sk.skill_id).slug) %>
+
+<%= link_to '<i class="glyphicon glyphicon-trash"></i>'.html_safe,  user_skill_path(sk),  class:'btn btn-warning', :confirm => t('.sure_question'), :method => :delete %>
+
+<% 
+end
+ end %>
+
+<br/><br/>
+
+
   <%=
   form_for(user_skill,:class=>'bs-example form-horizontal') do |f| %>
 

@@ -16,6 +16,19 @@ Satriani::Application.routes.draw do
   get 'calendar', to: 'calendar#index'
   get 'profile', to: 'profile#index'
 
+ localized do
+
+  get '/education/guitar/:city/:id' => 'api_get#get'
+  get '/education/guitar/:city' => 'api_get#performGet'
+
+  scope controller: 'static' do
+    get 'contact', action: 'contact', as: 'contact'
+    get 'faq', action: 'faq', as: 'faq'
+    get 'imprint', action: 'imprint', as: 'imprint'
+    get 'privacy', action: 'privacy', as: 'privacy'
+    get 'terms', action: 'terms', as: 'terms'
+  end
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -73,4 +86,6 @@ Satriani::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
+
+
 end

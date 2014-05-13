@@ -5,17 +5,7 @@
 
 <h4><%= t('.instruments')%></h4>
 
-<% 
 
-current_user.user_skills.each do |sk| %>
-
-<%=
-t(Skill.find(sk.skill_id).slug) %>
-<%= link_to '<i class="glyphicon glyphicon-trash"></i>'.html_safe,  user_skill_path(sk),  class:'btn btn-warning', :confirm => t('.sure_question_instrument'), :method => :delete %>
-<br/>
-<% end %>
-
-<br/><br/>
 
 <%= render :partial=> 'shared/skills_selector', locals:{user_skill:@user_skill, skill_array:@instruments, label:'instrument'} %>
 
@@ -24,21 +14,21 @@ t(Skill.find(sk.skill_id).slug) %>
 <p><%= t('.specials_description')%></p>
 
 <h4><%= t('.education')%></h4>
-
+<hr>
 
 <h4><%= t('.availability')%></h4>
 <%= render :partial=> 'shared/skills_selector', locals:{user_skill:@user_skill, skill_array:@availabilities, label:'availability'} %>
-
-<h4><%= t('.targets')%></h4>
-
+<hr>
+<h4><%= t('.target')%></h4>
+<%= render :partial=> 'shared/skills_selector', locals:{user_skill:@user_skill, skill_array:@targets, label:'target'} %>
 <h4><%= t('.price')%></h4>
-
+<hr>
 
 <h4><%= t('.transportation')%></h4>
 <%= render :partial=> 'shared/skills_selector', locals:{user_skill:@user_skill, skill_array:@transportations, label:'transportation'} %>
-
-<h4><%= t('.languages')%></h4>
-
+<hr>
+<h4><%= t('.language')%></h4>
+<%= render :partial=> 'shared/skills_selector', locals:{user_skill:@user_skill, skill_array:@languages, label:'language'} %>
 </div>
 
 <% end %>
@@ -47,3 +37,4 @@ t(Skill.find(sk.skill_id).slug) %>
 
 
 <%= render :template => 'layouts/profile_overview' %>
+

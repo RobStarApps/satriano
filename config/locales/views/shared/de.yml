@@ -15,3 +15,12 @@ de:
      select_availability: "Wähle Verfügbarkeit"
      add_transportation: "Ortsgebundenheit"
      select_transportation: "Wähle Ortsgebundenheit"
+     add_transportation: "Neue Zielgruppe"
+     select_transportation: "Wähle Zielgruppe"
+     sure_question: "Wirklich löschen?"
+    footer:
+     imprint: "Impressum"
+     faq: "FAQ"
+     contact: "Contact"
+     privacy: "Datenschutz"
+     terms: "Allgemeine Nutzungsbedingungen" 

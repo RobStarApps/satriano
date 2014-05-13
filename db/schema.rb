@@ -11,12 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140509151237) do
+ActiveRecord::Schema.define(version: 20140513145959) do
 
   create_table "conversations", force: true do |t|
     t.string   "subject",    default: ""
     t.datetime "created_at",              null: false
     t.datetime "updated_at",              null: false
+  end
+
+  create_table "countries", force: true do |t|
+    t.string  "iso"
+    t.string  "name"
+    t.string  "printable_name"
+    t.string  "iso3"
+    t.integer "numcode"
   end
 
   create_table "messages", force: true do |t|
@@ -80,11 +88,11 @@ ActiveRecord::Schema.define(version: 20140509151237) do
     t.string   "street_number"
     t.string   "postcode"
     t.string   "city"
-    t.string   "country"
     t.string   "phone"
     t.integer  "user_id"
     t.float    "latitude"
     t.float    "longitude"
+    t.integer  "country_id"
   end
 
   add_index "user_addresses", ["user_id"], name: "index_user_addresses_on_user_id", using: :btree

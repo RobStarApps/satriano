@@ -1,4 +1,4 @@
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBlONf7UUoCBLCC8F-zCQ4Ur0YuSi2fWQo&sensor=false"></script>
+
 <h1><%= t("home.hello") %></h1>
 
 <div id="googlemap">
@@ -20,6 +20,6 @@ longitude=9.986259;
 }
 
 
-refreshMap(latitude, longitude);
+refreshMap("map-canvas", latitude, longitude);
 
 </script>
