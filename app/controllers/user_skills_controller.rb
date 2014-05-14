@@ -50,6 +50,8 @@ class UserSkillsController < ApplicationController
   end
 
 
+
+
 def reload_skills
     user_skill_ids=Array.new
     user_skill_ids=current_user.user_skills.group(:skill_id).map(&:skill_id);

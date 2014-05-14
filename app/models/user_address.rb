@@ -11,7 +11,7 @@ class UserAddress < ActiveRecord::Base
 
    def geocode_address
    
-   binding.pry
+
 
   	[street+" "+street_number, city, postcode ].compact.join(', ')+" "+Country.find(country_id).printable_name
    end

@@ -8,6 +8,8 @@ gem 'activesupport', '~> 4.0.0'
 gem 'batch_translations'
 
 gem 'bootstrap-sass', '~> 3.1.1'
+
+
 gem 'breadcrumbs_on_rails'
 
 gem "cancan"

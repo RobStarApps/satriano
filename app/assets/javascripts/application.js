@@ -17,6 +17,8 @@
 
 function refreshMap(canvas, latitude, longitude){
 
+
+
 google.maps.visualRefresh = true;
  var geocoder;
 var map;

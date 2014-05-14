@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140513145959) do
+ActiveRecord::Schema.define(version: 20140514154703) do
 
   create_table "conversations", force: true do |t|
     t.string   "subject",    default: ""
@@ -25,6 +25,11 @@ ActiveRecord::Schema.define(version: 20140513145959) do
     t.string  "printable_name"
     t.string  "iso3"
     t.integer "numcode"
+  end
+
+  create_table "landingpages", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "messages", force: true do |t|

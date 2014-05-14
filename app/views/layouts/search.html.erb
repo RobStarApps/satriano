@@ -1,0 +1,27 @@
+<% content_for :content do %>
+
+
+
+	<div class="row">
+    <div  id="filter-sidebar"  class="col-sm-4">
+
+    <h5><%= t('.instrument')%></h5>
+ 	<%= render :partial=> 'shared/search_selector', locals:{search_skill:@landingpage, skill_array:@instruments, label:'instrument'} %>	
+	<h5><%= t('.availability')%></h5>
+ 	<%= render :partial=> 'shared/search_selector', locals:{search_skill:@landingpage, skill_array:@availabilities, label:'availability'} %>
+	<h5><%= t('.language')%></h5>
+ 	<%= render :partial=> 'shared/search_selector', locals:{search_skill:@landingpage, skill_array:@languages, label:'language'} %>
+ 	<h5><%= t('.target') %></h5>
+ 	<%= render :partial=> 'shared/search_selector', locals:{search_skill:@landingpage, skill_array:@targets, label:'target'} %>
+ 	 <h5><%= t('.transportation') %></h5>
+ 	<%= render :partial=> 'shared/search_selector', locals:{search_skill:@landingpage, skill_array:@transportations, label:'transportation'} %>
+
+    </div>
+
+	
+<div class="col-sm-8">
+	<%= yield(:search_subview) %>
+</div>
+</row>
+<% end %>
+<%= render :template => 'layouts/application' %>

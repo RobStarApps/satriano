@@ -10,3 +10,7 @@ de:
       account: "Ihre Ausbildungsstätten"
       skills: "Ihre Bildungsangebot"
       calendar: "Kalender"
+    search:
+      instrument: "Instrumente"
+      availability: "Verfügbarkeit"
+

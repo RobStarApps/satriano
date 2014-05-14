@@ -1,0 +1,40 @@
+
+<div>
+ <% 
+
+@search_skills.each do |sk| 
+
+
+if Type.find(sk.type_id).slug.eql? label  %>
+
+  <%= t(sk.slug) %>
+
+<%= link_to '<i class="glyphicon glyphicon-trash"></i>'.html_safe,  landingpages_path(sk),  class:'btn btn-warning btn-xs', :confirm => t('.sure_question'), :method => :delete %>
+<br/>
+<% 
+end
+ end %>
+</div>
+<div>
+
+ <%=
+  form_for(search_skill, :action => 'add_filter', :class=>'bs-example form-horizontal') do |f| 
+ 
+    %>
+
+  
+  <fieldset class="searchSkills">
+    <div class="form-group">
+  
+      <div >
+       
+ 
+    <%= select("search_skill", "skill_id",  skill_array.collect { |instrument| [t(instrument.slug) , instrument.id] } , {:prompt => t('.select_'+label)}, {:class=>'selectpicker', :"data-style" =>'btn-info btn-xs'}) %>
+
+ 
+        <%=f.submit '>>', class: "btn btn-primary btn-xs"%>
+      </div>
+    </div>
+  </fieldset>
+  <% end %>
+</div>

@@ -18,6 +18,14 @@ de:
      add_transportation: "Neue Zielgruppe"
      select_transportation: "Wähle Zielgruppe"
      sure_question: "Wirklich löschen?"
+
+    search_selector: 
+     add_instrument: "Weiteres Instrument"
+     select_instrument: "Wähle Instrument"
+     select_availability: "Wähle Verfügbarkeit"
+     select_transportation: "Wähle Ortsgebundenheit"
+     select_transportation: "Wähle Zielgruppe"
+     sure_question: "Wirklich löschen?" 
     footer:
      imprint: "Impressum"
      faq: "FAQ"

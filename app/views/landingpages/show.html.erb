@@ -1,0 +1,24 @@
+<% content_for :search_subview do %>
+
+
+
+<div id="search-map" class="map-canvas" class="col-sm-8" ></div>
+
+
+<script type="text/javascript">
+
+latitude=<%= @location['latitude'] %>;
+
+
+longitude=<%= @location['longitude'] %>;
+
+
+
+refreshMap("search-map", latitude, longitude);
+
+</script>
+
+
+</div>
+<% end %>
+<%= render :template => 'layouts/search' %>

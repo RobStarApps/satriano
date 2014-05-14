@@ -18,8 +18,46 @@ Satriani::Application.routes.draw do
 
  localized do
 
-  get '/education/guitar/:city/:id' => 'api_get#get'
-  get '/education/guitar/:city' => 'api_get#performGet'
+
+
+  scope 'lessions', controller: 'landingpages' do
+
+ 
+    post 'landingpages', action: 'add_filter'
+    get 'landingpages', action: 'show'
+    delete 'landingpages', action: 'delete_filter'
+
+
+    get '/guitar/:city', action: 'show',  defaults: {instrument: 'guitar'}
+    get '/guitar', action: 'show',   defaults: {instrument: 'guitar'}
+
+    get '/drums/:city', action: 'show',  defaults: {instrument: 'drums'}
+    get '/drums', action: 'show',   defaults: {instrument: 'drums'}
+
+    get '/singing/:city', action: 'show',  defaults: {instrument: 'singing'}
+    get '/singing', action: 'show',   defaults: {instrument: 'singing'}
+
+    get '/piano/:city', action: 'show',  defaults: {instrument: 'piano'}
+    get '/piano', action: 'show',   defaults: {instrument: 'piano'}
+
+    get '/keybord/:city', action: 'show',  defaults: {instrument: 'keyboard'}
+    get '/keyboard', action: 'show',   defaults: {instrument: 'keyboard'}
+
+    get '/violine/:city', action: 'show',  defaults: {instrument: 'violine'}
+    get '/violine', action: 'show',   defaults: {instrument: 'violine'}
+
+    get '/trumpet/:city', action: 'show',  defaults: {instrument: 'trumpet'}
+    get '/trumpet', action: 'show',   defaults: {instrument: 'trumpet'}
+
+    get '/sax/:city', action: 'show',  defaults: {instrument: 'sax'}
+    get '/sax', action: 'show',   defaults: {instrument: 'sax'}
+
+    get '/flute/:city', action: 'show',  defaults: {instrument: 'flute'}
+    get '/flute', action: 'show',   defaults: {instrument: 'flute'}
+
+    
+
+  end
 
   scope controller: 'static' do
     get 'contact', action: 'contact', as: 'contact'
