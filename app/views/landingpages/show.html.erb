@@ -11,10 +11,28 @@ latitude=<%= @location['latitude'] %>;
 
 
 longitude=<%= @location['longitude'] %>;
+marks=new Array();
+
+<%
+
+@result_array.each do |r|
+%>
+
+mark=new Object();
+mark.latitude=<%= r['address'].latitude %>;
+mark.longitude=<%= r['address'].longitude %>;
+
+marks.push(mark);
+
+<%
+end
+
+%>
 
 
 
-refreshMap("search-map", latitude, longitude);
+
+refreshMap("search-map", latitude, longitude, marks);
 
 </script>
 

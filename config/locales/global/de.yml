@@ -3,6 +3,7 @@ de:
  street: "Strasse"
  street_number: "Hausnummer"
  postcode: "Postleitzahl"
+ distance: "Umkreis"
  city: "Stadt"
  country: "Land"
  phone: "Telefonnummer"

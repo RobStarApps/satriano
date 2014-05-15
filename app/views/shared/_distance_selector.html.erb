@@ -1,0 +1,38 @@
+ <%=
+  form_for(search_skill, :action => 'add_filter', :class=>'bs-example form-horizontal') do |f| 
+ 
+    %>
+
+  
+  <fieldset class="searchSkills">
+
+      <div >
+          <span ><%= t('postcode') %></span>
+          <input type="text" name="postcode" class="form-control" value="<%= location["postcode"]%>">
+
+
+        <span ><%= t('distance') %></span>
+ 
+         <select name="distance" id="distance_selector" >
+        <option value="1">1</option>
+          <option value="5">5</option>
+            <option value="10">10</option>
+              <option value="25">25</option>
+                <option value="50">50</option>
+                 <option value="100">100</option>
+                 <option value="500">250</option>
+      </select>
+
+ 
+        <%=f.submit '>>', class: "btn btn-primary btn-xs"%>
+      </div>
+  
+  </fieldset>
+  <% end %>
+
+
+
+  <script type="text/javascript">
+
+    $("#distance_selector option[value='<%= location["distance"] %>']").attr('selected',true)
+  </script>

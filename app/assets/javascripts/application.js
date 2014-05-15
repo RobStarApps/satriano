@@ -15,23 +15,41 @@
 //= require bootstrap
 
 
-function refreshMap(canvas, latitude, longitude){
+function refreshMap(canvas, latitude, longitude, marks){
 
 
 
 google.maps.visualRefresh = true;
- var geocoder;
-var map;
+
+var gmap;
+
+
 function initialize() {
-	 geocoder = new google.maps.Geocoder();
+	 //geocoder = new google.maps.Geocoder();
   var mapOptions = {
     zoom: 10,
     center: new google.maps.LatLng(latitude, longitude)
   };
-  map = new google.maps.Map(document.getElementById(canvas),
+  gmap = new google.maps.Map(document.getElementById(canvas),
       mapOptions);
+
+   	for(i=0; i<marks.length;i++){
+
+   		  myLatlng = new google.maps.LatLng(marks[i].latitude, marks[i].longitude);
+   
+         marker = new google.maps.Marker({
+            map: gmap,
+            position: myLatlng,
+            title:marks[i].title
+        });
+   	}
+
 }
+
 
 google.maps.event.addDomListener(window, 'load', initialize);
 
+
 }
+
+

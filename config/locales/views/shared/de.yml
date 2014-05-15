@@ -22,9 +22,9 @@ de:
     search_selector: 
      add_instrument: "Weiteres Instrument"
      select_instrument: "Wähle Instrument"
-     select_availability: "Wähle Verfügbarkeit"
-     select_transportation: "Wähle Ortsgebundenheit"
-     select_transportation: "Wähle Zielgruppe"
+     select_availability: "Wähle Zeit"
+     select_target: "Wähle Schülergruppe"
+     select_transportation: "Wähle Mobilität"
      sure_question: "Wirklich löschen?" 
     footer:
      imprint: "Impressum"

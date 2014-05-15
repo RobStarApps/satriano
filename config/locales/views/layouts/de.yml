@@ -11,6 +11,13 @@ de:
       skills: "Ihre Bildungsangebot"
       calendar: "Kalender"
     search:
+      distance: "Umkreissuche"
       instrument: "Instrumente"
-      availability: "Verfügbarkeit"
+      availability: "Unterrichtszeiten"
+      language: "Unterrichtssprache"
+      target: "Spezielle Schülerschaft"
+      transportation: "Mobilität"
+
+
+
 
