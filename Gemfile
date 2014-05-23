@@ -13,8 +13,13 @@ gem 'bootstrap-sass', '~> 3.1.1'
 gem 'breadcrumbs_on_rails'
 
 gem "cancan"
+
+gem 'carrierwave'
+gem 'carrierwave-aws'
+
 gem 'carmen'
 gem 'carmen-rails'
+
 gem 'devise'
 gem 'devise-i18n-views'
 
@@ -26,7 +31,7 @@ gem 'http_accept_language'
 gem 'jquery-rails'
 
 
-
+gem 'mini_magick'
 gem 'mysql2'
 
 gem 'simple_form'

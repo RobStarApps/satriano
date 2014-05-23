@@ -8,15 +8,15 @@
 <%= render :partial=> 'shared/distance_selector', locals:{search_skill:@landingpage, location:@location} %>	
 
     <h5><%= t('.instrument')%></h5>
- 	<%= render :partial=> 'shared/search_selector', locals:{search_skill:@landingpage, skill_array:@instruments, label:'instrument'} %>	
+ 	<%= render :partial=> 'shared/search_selector', locals:{search_skill:@landingpage, skill_array:@search_skill_leftovers[:instruments], label:'instrument'} %>	
 	<h5><%= t('.availability')%></h5>
- 	<%= render :partial=> 'shared/search_selector', locals:{search_skill:@landingpage, skill_array:@availabilities, label:'availability'} %>
+ 	<%= render :partial=> 'shared/search_selector', locals:{search_skill:@landingpage, skill_array:@search_skill_leftovers[:availabilities], label:'availability'} %>
 	<h5><%= t('.language')%></h5>
- 	<%= render :partial=> 'shared/search_selector', locals:{search_skill:@landingpage, skill_array:@languages, label:'language'} %>
+ 	<%= render :partial=> 'shared/search_selector', locals:{search_skill:@landingpage, skill_array:@search_skill_leftovers[:languages], label:'language'} %>
  	<h5><%= t('.target') %></h5>
- 	<%= render :partial=> 'shared/search_selector', locals:{search_skill:@landingpage, skill_array:@targets, label:'target'} %>
+ 	<%= render :partial=> 'shared/search_selector', locals:{search_skill:@landingpage, skill_array:@search_skill_leftovers[:targets], label:'target'} %>
  	 <h5><%= t('.transportation') %></h5>
- 	<%= render :partial=> 'shared/search_selector', locals:{search_skill:@landingpage, skill_array:@transportations, label:'transportation'} %>
+ 	<%= render :partial=> 'shared/search_selector', locals:{search_skill:@landingpage, skill_array:@search_skill_leftovers[:transportations], label:'transportation'} %>
 
     </div>
 

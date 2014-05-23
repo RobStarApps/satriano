@@ -7,6 +7,7 @@ de:
  city: "Stadt"
  country: "Land"
  phone: "Telefonnummer"
+ avatar: "Profilbild"
  optional: "opional"
  instrument: "instrument"
  guitar: "Gitarre"
@@ -18,9 +19,18 @@ de:
  double_bass: "Kontrabass"
 
 
+ transportation: "Ortsgebundenheit"
+ price: "Preis pro Stunde"
+ education: "Ausbildung"
+ language: "Fremd-/Unterrichtssprachen"
+ instruments: "Instrumente"
+ specials: "Spezialisierungen"
+ availability: "Verfügbarkeit"
+
 #transportations
  addresses_only: "Unterricht nur in meinen Ausbildungsstätten"
  comes_around: "Unterricht auch außerhalb der Ausbildungsstätten"
+
 
 
  #availabilities

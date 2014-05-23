@@ -1,5 +1,5 @@
 class LandingpagesController < ApplicationController
-	
+	include ApplicationHelper
  	before_filter :init_Landingpage
 
 
@@ -211,11 +211,10 @@ def reload_skills
 				@search_skills.push(Skill.find(sk));
        end
 	end
-    @instruments=Skill.where(:type_id => Type.where(:slug=>'instrument').first.id) & Skill.where.not(:id=>@search_skill_ids)
-    @availabilities=Skill.where(:type_id => Type.where(:slug=>'availability').first.id) & Skill.where.not(:id=>@search_skill_ids)
-    @transportations=Skill.where(:type_id => Type.where(:slug=>'transportation').first.id) & Skill.where.not(:id=>@search_skill_ids)
-    @targets=Skill.where(:type_id => Type.where(:slug=>'target').first.id) & Skill.where.not(:id=>@search_skill_ids)
-    @languages=Skill.where(:type_id => Type.where(:slug=>'language').first.id) & Skill.where.not(:id=>@search_skill_ids)
+
+	@search_skill_leftovers=get_skills_without(@search_skill_ids)
+
+ 
 
  end
 

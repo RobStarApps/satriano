@@ -12,13 +12,15 @@ Satriani::Application.routes.draw do
   resources :user_skills
   resources :messages
 
- 
+  get 'change_user_profile', to: 'change_user_profile#edit'
+  patch 'change_user_profile', to: 'change_user_profile#update'
+
   get 'calendar', to: 'calendar#index'
   get 'profile', to: 'profile#index'
 
  localized do
 
-
+  get 'users/:id', to: 'users#show'
 
   scope 'lessions', controller: 'landingpages' do
 

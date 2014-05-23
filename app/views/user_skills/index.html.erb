@@ -7,7 +7,7 @@
 
 
 
-<%= render :partial=> 'shared/skills_selector', locals:{user_skill:@user_skill, skill_array:@instruments, label:'instrument'} %>
+<%= render :partial=> 'shared/skills_selector', locals:{user_skill:@user_skill, skill_array:@user_skill_leftovers[:instruments], label:'instrument'} %>
 
 
 <h4><%= t('.specials')%></h4>
@@ -17,18 +17,18 @@
 <hr>
 
 <h4><%= t('.availability')%></h4>
-<%= render :partial=> 'shared/skills_selector', locals:{user_skill:@user_skill, skill_array:@availabilities, label:'availability'} %>
+<%= render :partial=> 'shared/skills_selector', locals:{user_skill:@user_skill, skill_array:@user_skill_leftovers[:availabilities], label:'availability'} %>
 <hr>
 <h4><%= t('.target')%></h4>
-<%= render :partial=> 'shared/skills_selector', locals:{user_skill:@user_skill, skill_array:@targets, label:'target'} %>
+<%= render :partial=> 'shared/skills_selector', locals:{user_skill:@user_skill, skill_array:@user_skill_leftovers[:targets], label:'target'} %>
 <h4><%= t('.price')%></h4>
 <hr>
 
 <h4><%= t('.transportation')%></h4>
-<%= render :partial=> 'shared/skills_selector', locals:{user_skill:@user_skill, skill_array:@transportations, label:'transportation'} %>
+<%= render :partial=> 'shared/skills_selector', locals:{user_skill:@user_skill, skill_array:@user_skill_leftovers[:transportations], label:'transportation'} %>
 <hr>
 <h4><%= t('.language')%></h4>
-<%= render :partial=> 'shared/skills_selector', locals:{user_skill:@user_skill, skill_array:@languages, label:'language'} %>
+<%= render :partial=> 'shared/skills_selector', locals:{user_skill:@user_skill, skill_array:@user_skill_leftovers[:languages], label:'language'} %>
 </div>
 
 <% end %>
